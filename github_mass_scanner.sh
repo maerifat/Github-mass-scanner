@@ -3,7 +3,7 @@ QUERY="byjusfutureschool"
 URLFILE=${QUERY}_allurls.txt
 USERSFILE=${QUERY}_users.txt
 rm $URLFILE
-QUERY="brightchamps"
+QUERY="whitehatjr"
 TOTALCOUNT=`curl "https://github.com/search/count?q=$QUERY&type=code" -Ls \
 -H "Cookie: user_session=9M328YcwZT-JNLrIkgRpIOxOvk7jrwtERf__5RwaMQkjKbCO"\
 |egrep -o ">[0-9KMB]+"| tr -d "><" | sed 's/K/000/' |\
